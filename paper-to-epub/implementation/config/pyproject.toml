@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "epub-papers"
+version = "0.1.0"
+description = "Crop academic PDF margins and export reader-friendly EPUB/CBZ outputs"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "epub-papers contributors" }
+]
+dependencies = [
+  "pypdf>=4.0.1",
+  "Pillow>=10.1.0",
+  "ebooklib>=0.18.0",
+  "click>=8.1.7",
+  "numpy>=1.24.3",
+  "PyMuPDF>=1.23.0",
+  "PySide6>=6.8.0",
+  "docling>=2.0.0",
+  "onnxruntime>=1.24.0"
+]
+
+[project.scripts]
+epub-papers = "cli:cli"
+epub-papers-ui = "desktop_ui:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = [
+  "app_service",
+  "cli",
+  "column_splitter",
+  "config",
+  "desktop_ui",
+  "epub_generator",
+  "layout_detector",
+  "margin_detector",
+  "pdf_processor",
+  "reader_export",
+  "ui_contracts"
+]
+
+[tool.setuptools.package-data]
+"*" = ["*.md"]

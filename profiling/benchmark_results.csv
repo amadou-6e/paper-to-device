@@ -1,0 +1,4 @@
+case,exit,wall_sec,docling_convert_sec,providers
+legacy,0,3.474,,n/a
+onnx_cpu_forced,0,203.644,28.08,"'CUDAExecutionProvider', 'CPUExecutionProvider'"
+onnx_auto_cuda,0,28.072,12.55,"'CUDAExecutionProvider', 'CPUExecutionProvider'"

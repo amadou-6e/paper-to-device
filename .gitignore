@@ -1,0 +1,71 @@
+# ==============================================================================
+# Python
+# ==============================================================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+.eggs/
+dist/
+build/
+.installed.cfg
+
+# ==============================================================================
+# Virtual environments
+# ==============================================================================
+venv/
+.venv/
+env/
+.env/
+
+# ==============================================================================
+# Temporary / scratch work
+# ==============================================================================
+tmp/
+extract/
+
+# ==============================================================================
+# k2pdfopt — maintained as a separate fork repo
+# ==============================================================================
+paper-to-epub/implementation/code/external/k2pdfopt/
+paper-to-epub/implementation/code/external/vcpkg/
+
+# ==============================================================================
+# Build artefacts
+# ==============================================================================
+*.exe
+*.o
+*.a
+*.so
+*.dll
+*.lib
+*.dylib
+
+# ==============================================================================
+# Generated outputs (not source)
+# ==============================================================================
+example-papers/outputs/
+profiling/out/
+profiling/*.prof
+profiling/competitors/k2pdfopt/
+profiling/competitors/pdfcropmargins/
+profiling/competitors/ours_network/
+profiling/competitors/k2_captcha*.png
+profiling/competitors/k2_cookie.txt
+profiling/competitors/k2_download.html
+
+# Implementation examples — cropped PDFs, extracted EPUBs, test outputs
+/paper-to-epub/implementation/examples/
+**/*_extracted/
+**/*_cropped.pdf
+**/*_cropped.epub
+
+# ==============================================================================
+# OS / IDE
+# ==============================================================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
