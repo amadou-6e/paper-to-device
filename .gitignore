@@ -29,7 +29,7 @@ extract/
 # ==============================================================================
 # k2pdfopt — maintained as a separate fork repo
 # ==============================================================================
-paper-to-epub/implementation/code/external/k2pdfopt/
+k2pdfopt/
 paper-to-epub/implementation/code/external/vcpkg/
 
 # ==============================================================================
