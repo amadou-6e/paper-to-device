@@ -47,6 +47,7 @@ paper-to-epub/implementation/code/external/vcpkg/
 # Generated outputs (not source)
 # ==============================================================================
 example-papers/outputs/
+tests/runs/
 profiling/out/
 profiling/*.prof
 profiling/competitors/k2pdfopt/
